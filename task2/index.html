@@ -13,25 +13,31 @@
   </head>
   <body>
     <header class="header">
-      <img src="img/Logo.png" alt="Logo" class="header__logo" />
-      <nav class="header__menu menu">
-        <ul class="menu__list">
-          <li class="menu__item menu__item--selected">
-            <a href="#home" class="menu__link">HOME</a>
-          </li>
-          <li class="menu__item">
-            <a href="#about" class="menu__link">ABOUT</a>
-          </li>
-          <li class="menu__item">
-            <a href="#" class="menu__link">SERVICES</a>
-          </li>
-          <li class="menu__item"><a href="#" class="menu__link">GALLERY</a></li>
-          <li class="menu__item">
-            <a href="#blog" class="menu__link">BLOG</a>
-          </li>
-          <li class="menu__item"><a href="#" class="menu__link">CONTACT</a></li>
-        </ul>
-      </nav>
+      <div class="header-container">
+        <img src="img/Logo.png" alt="Logo" class="header__logo" />
+        <nav class="header__menu menu">
+          <ul class="menu__list">
+            <li class="menu__item menu__item--selected">
+              <a href="#home" class="menu__link">HOME</a>
+            </li>
+            <li class="menu__item">
+              <a href="#about" class="menu__link">ABOUT</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">SERVICES</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">GALLERY</a>
+            </li>
+            <li class="menu__item">
+              <a href="#blog" class="menu__link">BLOG</a>
+            </li>
+            <li class="menu__item">
+              <a href="#" class="menu__link">CONTACT</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="main">
       <section class="main__section section-home" id="home">
@@ -43,6 +49,7 @@
           </p>
           <button class="button section-home__button">GET FREE NOW</button>
         </div>
+        <img src="img/ScrollIcon.png" alt="" class="section-home__scroll" />
       </section>
       <section class="main__section section-about" id="about">
         <img src="img/plate.png" alt="" class="section-about__image" />
@@ -126,8 +133,5 @@
         </div>
       </section>
     </main>
-    <a href="#" class="main__scroll scroll"
-      ><img src="img/ScrollIcon.png" alt="" class="scroll__image"
-    /></a>
   </body>
 </html>
