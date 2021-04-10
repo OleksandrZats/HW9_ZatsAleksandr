@@ -1,0 +1,135 @@
+@font-face {
+  font-family: "Museo Sans Rounded";
+  src: local("Museo Sans Rounded 300"), local("Museo-Sans-Rounded-300"),
+    url("../fonts/MuseoSansRounded-300.woff2") format("woff2"),
+    url("../fonts/MuseoSansRounded-300.woff") format("woff"),
+    url("../fonts/MuseoSansRounded-300.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.color-DarkBlue {
+  background-color: #1f273f;
+}
+.color-White {
+  background-color: #fff;
+}
+.color-Red {
+  background-color: #ed3333;
+}
+.color-Cyan {
+  background-color: #29e3ea;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: url(../img/BG.jpg) center center no-repeat;
+  background-size: cover;
+  padding-top: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+}
+.product-card {
+  display: flex;
+  position: relative;
+  background-color: #111a28;
+  padding: 69px 60px 69px 37px;
+  box-shadow: 0px 0px 65px rgba(0, 0, 0, 0.82);
+  border-radius: 10px;
+}
+.product-card__logo {
+  position: absolute;
+  top: 20px;
+  bottom: 20px;
+}
+.product-card__image {
+  object-fit: contain;
+  min-width: 48%;
+  flex-grow: 1;
+  margin-right: 76px;
+}
+.product-card__colors {
+  position: absolute;
+  bottom: 30px;
+  left: 25%;
+
+  list-style: none;
+  display: flex;
+}
+.product-card__color {
+  display: block;
+  width: 9px;
+  height: 9px;
+
+  border-radius: 50%;
+  border: 1px solid transparent;
+
+  cursor: pointer;
+}
+.product-card__color:hover {
+  border-color: #7e838b;
+}
+.product-card__color:not(:last-child) {
+  margin-right: 5px;
+}
+.product-card__color--selected {
+  border-color: #7e838b;
+}
+
+.product-info {
+  width: 184px;
+  font-family: "Museo Sans Rounded";
+  color: #e1e1e1;
+
+  font-size: 14px;
+}
+.product-info__title {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+.product-info__category {
+  opacity: 54%;
+
+  font-size: 14px;
+}
+.product-info > *:not(:first-child):not(:last-child) {
+  margin-bottom: 30px;
+}
+.rate {
+  list-style: none;
+  display: flex;
+}
+.drop-down {
+  display: inline-block;
+  padding: 8px 30px 8px 14px;
+  position: relative;
+
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  min-width: 75px;
+
+  cursor: pointer;
+}
+.drop-down__arow {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+}
+.button {
+  min-width: 184px;
+  min-height: 40px;
+
+  font-size: 14px;
+  color: #e1e1e1;
+  background: rgba(76, 82, 90, 0.26);
+  border: 1px solid rgba(255, 255, 255, 0.26);
+  cursor: pointer;
+}
